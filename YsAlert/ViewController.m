@@ -32,7 +32,7 @@
 
 
 -(void)test1{
-    [self CKAlertTitle:@"警告" SubTitle:@"删除这条信息" Alignment:1 Items:@[@"取消", @"删除"] Click:^(int Dex) {
+    [self CKAlertTitle:@"警告" SubTitle:@"删除这条信息?" Alignment:1 Items:@[@"取消", @"删除"] Click:^(int Dex) {
         if (Dex==0) return;//忽略取消
         NSLog(@"已删除!");
     }];
@@ -56,14 +56,14 @@
 
 
 -(void)system1{
-    [self SystemAlerTitle:@"警告" SubTitle:@"删除这条信息" Style:0 Items:@[@"删除"] Click:^(int Dex) {
+    [self SystemAlerTitle:@"警告" SubTitle:@"删除这条信息?" Style:0 Items:@[@"删除"] Click:^(int Dex) {
         NSLog(@"system1:已删除!");
     } Cancel:nil];
 
 }
 
 -(void)system2{
-    [self SystemAlerTitle:@"警告" SubTitle:@"删除这条信息" Style:1 Items:@[@"删除"] Click:^(int Dex) {
+    [self SystemAlerTitle:@"警告" SubTitle:@"删除这条信息?" Style:1 Items:@[@"删除"] Click:^(int Dex) {
         NSLog(@"system2:已删除!");
     } Cancel:^{
         NSLog(@"system2:放弃删除!");
