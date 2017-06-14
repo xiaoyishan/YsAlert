@@ -16,13 +16,13 @@ CKAlertViewController原作：https://github.com/Pr-Chen/CKAlertViewController
 
 ```objective-c
 [self CKAlertTitle:@"警告" SubTitle:@"删除这条信息" Alignment:1 Items:@[@"取消", @"删除"] Click:^(int Dex) {
-if (Dex==0) return;//忽略取消
-NSLog(@"已删除!");
+    if (Dex==0) return;//忽略取消
+    NSLog(@"已删除!");
 }];
 ```
 ```objective-c
 
 [[UIViewController new] SystemAlerTitle:@"警告" SubTitle:@"删除这条信息" Style:0 Items:@[@"删除"] Click:^(int Dex) {
-NSLog(@"system1:已删除!");
+    NSLog(@"system1:已删除!");
 } Cancel:nil];
 ```
